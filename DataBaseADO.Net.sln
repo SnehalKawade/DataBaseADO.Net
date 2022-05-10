@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseADO.Net", "DataBaseADO.Net\DataBaseADO.Net.csproj", "{59569937-6455-4B87-9FE5-8D1DE8B1EF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkDB", "HomeWorkDB\HomeWorkDB.csproj", "{DF261493-2648-462D-A7A3-AC15C7296A2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59569937-6455-4B87-9FE5-8D1DE8B1EF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59569937-6455-4B87-9FE5-8D1DE8B1EF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59569937-6455-4B87-9FE5-8D1DE8B1EF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59569937-6455-4B87-9FE5-8D1DE8B1EF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E19FB1B2-7AD8-433E-A3FA-B42D9306BF3F}
+	EndGlobalSection
+EndGlobal
