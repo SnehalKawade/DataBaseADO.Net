@@ -54,6 +54,7 @@
             this.label1.Size = new System.Drawing.Size(81, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee ID";
+            
             // 
             // txtEmpID
             // 
@@ -62,6 +63,7 @@
             this.txtEmpID.Name = "txtEmpID";
             this.txtEmpID.Size = new System.Drawing.Size(140, 22);
             this.txtEmpID.TabIndex = 1;
+         
             // 
             // txtEmpName
             // 
@@ -70,6 +72,7 @@
             this.txtEmpName.Name = "txtEmpName";
             this.txtEmpName.Size = new System.Drawing.Size(140, 22);
             this.txtEmpName.TabIndex = 3;
+           
             // 
             // label2
             // 
@@ -80,6 +83,7 @@
             this.label2.Size = new System.Drawing.Size(103, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Employee Name";
+            
             // 
             // txtDesignation
             // 
@@ -88,6 +92,7 @@
             this.txtDesignation.Name = "txtDesignation";
             this.txtDesignation.Size = new System.Drawing.Size(140, 22);
             this.txtDesignation.TabIndex = 5;
+           
             // 
             // label3
             // 
@@ -98,6 +103,7 @@
             this.label3.Size = new System.Drawing.Size(75, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Designation";
+        
             // 
             // txtSalary
             // 
@@ -106,6 +112,7 @@
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(140, 22);
             this.txtSalary.TabIndex = 7;
+            
             // 
             // label4
             // 
@@ -116,6 +123,7 @@
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Salary";
+            
             // 
             // btnCreate
             // 
@@ -207,7 +215,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeData";
             this.Text = "EmployeeData";
-            this.Load += new System.EventHandler(this.EmployeeData_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

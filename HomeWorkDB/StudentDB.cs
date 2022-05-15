@@ -36,9 +36,9 @@ namespace HomeWorkDB
             try
             {
 
-                string qry = "insert into Student values(@sid,@sname,@branch,@percentage)";
+                string qry = "insert into Student values(@id,@sname,@branch,@percentage)";
                 cmd = new SqlCommand(qry, con);
-                cmd.Parameters.AddWithValue("@sid", Convert.ToInt32(txtSID.Text));
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtSID.Text));
                 cmd.Parameters.AddWithValue("@sname", txtSName.Text);
                 cmd.Parameters.AddWithValue("@branch", txtBranch.Text);
                 cmd.Parameters.AddWithValue("@percentage", Convert.ToInt32(txtPercentage.Text));
@@ -68,16 +68,16 @@ namespace HomeWorkDB
         {
             try
             {
-                string qry = "select * from Student where SID=@sid";
+                string qry = "select * from Student where Id=@id";
                 cmd = new SqlCommand(qry, con);
-                cmd.Parameters.AddWithValue("@sid", Convert.ToInt32(txtSID.Text));
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtSID.Text));
                 con.Open();
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        txtSName.Text = dr["SName"].ToString();
+                        txtSName.Text = dr["Name"].ToString();
                         txtBranch.Text = dr["Branch"].ToString();
                         txtPercentage.Text = dr["Percentage"].ToString();
                     }
@@ -101,9 +101,9 @@ namespace HomeWorkDB
         {
             try
             {
-                string qry = "update Student set SName=@sname, Brach=@branch, Percentage=@percentage where sid=@sid";
+                string qry = "update Student set Name=@sname, Branch=@branch, Percentage=@percentage where Id=@id";
                 cmd = new SqlCommand(qry, con);
-                cmd.Parameters.AddWithValue("@sid", Convert.ToInt32(txtSID.Text));
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtSID.Text));
                 cmd.Parameters.AddWithValue("@sname", txtSName.Text);
                 cmd.Parameters.AddWithValue("@branch", txtBranch.Text);
                 cmd.Parameters.AddWithValue("@percentage", Convert.ToInt32(txtPercentage.Text));
@@ -131,9 +131,9 @@ namespace HomeWorkDB
         {
             try
             {
-                string qry = "delete from Student where SId=@sid";
+                string qry = "delete from Student where Id=@id";
                 cmd = new SqlCommand(qry, con);
-                cmd.Parameters.AddWithValue("@sid", Convert.ToInt32(txtSID.Text));
+                cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtSID.Text));
 
                 con.Open();
 
@@ -191,5 +191,6 @@ namespace HomeWorkDB
             txtBranch.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtPercentage.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
+       
     }
 }

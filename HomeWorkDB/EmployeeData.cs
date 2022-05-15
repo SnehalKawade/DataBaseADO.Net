@@ -190,10 +190,5 @@ namespace HomeWorkDB
             txtDesignation.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtSalary.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
-
-        private void EmployeeData_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

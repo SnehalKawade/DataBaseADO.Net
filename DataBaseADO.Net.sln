@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseADO.Net", "DataBase
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkDB", "HomeWorkDB\HomeWorkDB.csproj", "{DF261493-2648-462D-A7A3-AC15C7296A2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Access Layering Pgm", "Access Layering Pgm\Access Layering Pgm.csproj", "{A7991F8D-7987-4862-A34C-74762E2965C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF261493-2648-462D-A7A3-AC15C7296A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7991F8D-7987-4862-A34C-74762E2965C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7991F8D-7987-4862-A34C-74762E2965C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7991F8D-7987-4862-A34C-74762E2965C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7991F8D-7987-4862-A34C-74762E2965C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

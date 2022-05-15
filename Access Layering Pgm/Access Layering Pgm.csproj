@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59569937-6455-4B87-9FE5-8D1DE8B1EF3F}</ProjectGuid>
+    <ProjectGuid>{A7991F8D-7987-4862-A34C-74762E2965C8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DataBaseADO.Net</RootNamespace>
-    <AssemblyName>DataBaseADO.Net</AssemblyName>
+    <RootNamespace>Access_Layering_Pgm</RootNamespace>
+    <AssemblyName>Access Layering Pgm</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Access_Layering_Pgm.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -47,43 +50,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DisconnectedPgm\ProductDisconnect.cs">
+    <Compile Include="DAL\EmpDal.cs" />
+    <Compile Include="DAL\ProductDal.cs" />
+    <Compile Include="DAL\StudentDal.cs" />
+    <Compile Include="EmpDB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DisconnectedPgm\ProductDisconnect.Designer.cs">
-      <DependentUpon>ProductDisconnect.cs</DependentUpon>
+    <Compile Include="EmpDB.Designer.cs">
+      <DependentUpon>EmpDB.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisconnectedPgm\StudentDisconnect.cs">
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="ProductD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DisconnectedPgm\StudentDisconnect.Designer.cs">
-      <DependentUpon>StudentDisconnect.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Emp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Emp.Designer.cs">
-      <DependentUpon>Emp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProductDB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProductDB.Designer.cs">
-      <DependentUpon>ProductDB.cs</DependentUpon>
+    <Compile Include="ProductD.Designer.cs">
+      <DependentUpon>ProductD.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DisconnectedPgm\ProductDisconnect.resx">
-      <DependentUpon>ProductDisconnect.cs</DependentUpon>
+    <Compile Include="StudentD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentD.Designer.cs">
+      <DependentUpon>StudentD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EmpDB.resx">
+      <DependentUpon>EmpDB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisconnectedPgm\StudentDisconnect.resx">
-      <DependentUpon>StudentDisconnect.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Emp.resx">
-      <DependentUpon>Emp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductDB.resx">
-      <DependentUpon>ProductDB.cs</DependentUpon>
+    <EmbeddedResource Include="ProductD.resx">
+      <DependentUpon>ProductD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +91,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentD.resx">
+      <DependentUpon>StudentD.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
